@@ -2,13 +2,15 @@
 
   void main() {
     runApp(
-         MaterialApp(
+         const MaterialApp(
             home: Test()
         )
     );
   }
 
   class Test extends StatelessWidget {
+  const Test({super.key});
+
     // const test({super.key});
 
     @override
@@ -26,23 +28,89 @@
           ),
         ),
 
-        body:  Center(
-          child:
-            OutlinedButton(
-              onPressed: () { },
-              style: OutlinedButton.styleFrom(
-                backgroundColor: Colors.purple,
-              ),
-              child: const Text(
-                'Outlined Button',
-                style: TextStyle(
-                  color: Colors.red,
-                  fontFamily: 'Oswald',
-
+        body:
+            const Row(
+              children: [
+                Text(
+                  'Hello',
+                  style: TextStyle(
+                    fontFamily: 'IndieFlower',
+                    fontSize: 20,
+                  ),
                 ),
-              ),
 
-            )
+                // Icon(
+                //   Icons.image,
+                //   color: Colors.tealAccent,
+                //   size:24
+                //   ),
+
+                Image(
+                  image: AssetImage("assets/Cybercity 1.jpg"),
+                  width: 150,
+                  height: 150,
+                  alignment: Alignment.center,
+                  // fit: BoxFit.cover,
+                ),
+
+                // TextButton(
+                //     onPressed: () {},
+                //     style: TextButton.styleFrom(
+                //
+                //     ),
+                //     child: Image(
+                //       image: AssetImage("Cybercity 1.jpg"),
+                //     )
+                // ),
+              ],
+            ),
+            // const Padding(
+            //   padding: EdgeInsets.all(20),
+            //   // margin: EdgeInsets.symmetric(vertical: 40, horizontal: 40),
+            //   child: Text(
+            //     'Hello',
+            //     style: TextStyle(
+            //       fontFamily: 'Oswald'
+            //     ),
+            //   ),
+            // ),
+
+            // Container(
+            //   // padding: EdgeInsets.symmetric(vertical: 10.0, horizontal:50.0),
+            //   // padding: const EdgeInsets.all(20),
+            //   padding: const EdgeInsets.fromLTRB(10, 20, 40, 60),
+            //   // margin: const EdgeInsets.all(20),
+            //   margin: const EdgeInsets.fromLTRB(10, 50, 30, 20),
+            //   color: Colors.amber,
+            //   child: const Text(
+            //     'Hello',
+            //     style: TextStyle(
+            //       fontFamily: 'IndieFlower',
+            //       fontSize: 20,
+            //     ),
+            //   ),
+            // ),
+
+        // Center(
+        //   child:
+        //     OutlinedButton.icon(
+        //       onPressed: () { },
+        //       icon: const Icon(
+        //         Icons.class_sharp,
+        //         color: Colors.white,
+        //       ),
+        //         style: OutlinedButton.styleFrom(
+        //         backgroundColor: Colors.purple,
+        //       ),
+        //       label: const Text(
+        //         'Outlined Button',
+        //         style: TextStyle(
+        //           color: Colors.white,
+        //           fontFamily: 'Oswald',
+        //         ),
+        //       ),
+        //     )
+
           // TextButton(
           //     onPressed: () {},
           //     style: TextButton.styleFrom(
@@ -82,9 +150,8 @@
           //     // fontWeight: FontWeight.bold,
           //     fontSize: 24,
           //   ),
-          // ),
-        ),
-
+        //   ),
+        // ),
 
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
