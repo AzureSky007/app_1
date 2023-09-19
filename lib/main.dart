@@ -29,41 +29,117 @@
         ),
 
         body:
-            const Row(
+            // const
+            Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+
               children: [
+                const
                 Text(
-                  'Hello',
+                  'This is just plain text',
                   style: TextStyle(
-                    fontFamily: 'IndieFlower',
-                    fontSize: 20,
+                    fontFamily: 'Nabla',
+                    fontSize: 40
                   ),
                 ),
 
-                // Icon(
-                //   Icons.image,
-                //   color: Colors.tealAccent,
-                //   size:24
-                //   ),
-
+                const
                 Image(
-                  image: AssetImage("assets/Cybercity 1.jpg"),
                   width: 150,
-                  height: 150,
-                  alignment: Alignment.center,
-                  // fit: BoxFit.cover,
+                  height: 200,
+                  // alignment: Alignment.center,
+                  image: AssetImage('assets/Car.jpg'),
                 ),
 
-                // TextButton(
-                //     onPressed: () {},
-                //     style: TextButton.styleFrom(
-                //
-                //     ),
-                //     child: Image(
-                //       image: AssetImage("Cybercity 1.jpg"),
-                //     )
-                // ),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.amber
+                  ),
+                    onPressed: () {},
+                    child:
+                    const
+                    Text(
+                        'This is Elevated Button',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 20,
+                        fontFamily: 'IndieFlower'
+                      ),
+                    )
+                ),
               ],
+
             ),
+
+            // const
+            // Row(
+            //   // mainAxisAlignment: MainAxisAlignment.center,
+            //   // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //   // mainAxisAlignment: MainAxisAlignment.spaceAround,
+            //   // mainAxisAlignment: MainAxisAlignment.start,
+            //   // mainAxisAlignment: MainAxisAlignment.end,
+            //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            //
+            //   crossAxisAlignment: CrossAxisAlignment.end,
+            //   // crossAxisAlignment: CrossAxisAlignment.stretch,
+            //   // The stretch property will stretch it from top to bottom completely
+            //
+            //   children: [
+            //     // const
+            //     Text(
+            //       'Hello',
+            //       style: TextStyle(
+            //         fontFamily: 'IndieFlower',
+            //         fontSize: 20,
+            //       ),
+            //     ),
+            //
+            //     // Icon(
+            //     //   Icons.image,
+            //     //   color: Colors.tealAccent,
+            //     //   size:24
+            //     //   ),
+            //
+            //    // const
+            //    Image(
+            //       image: AssetImage("assets/Cybercity 1.jpg"),
+            //       width: 150,
+            //       height: 150,
+            //       alignment: Alignment.center,
+            //       // fit: BoxFit.cover,
+            //     ),
+            //
+            //     // ElevatedButton(
+            //     //     style: ElevatedButton.styleFrom(
+            //     //       backgroundColor: Colors.amber
+            //     //     ),
+            //     //     onPressed: () {},
+            //     //     child: const Text(
+            //     //       'This is the Elevated Button in the Row'
+            //     //     ),
+            //     // ),
+            //
+            //     // TextButton(
+            //     //     onPressed: () {},
+            //     //     style: TextButton.styleFrom(
+            //     //       backgroundColor: Colors.amber
+            //     //     ),
+            //     //     child: const Text(
+            //     //       'This is the Text Button'
+            //     //     )
+            //     // ),
+            //
+            //     // Container(
+            //     //   color: Colors.purple,
+            //     //   padding: const EdgeInsets.all(20.0),
+            //     //   child: const Text(
+            //     //     'This is the Text for the container'
+            //     //   ),
+            //     // ),
+            //   ],
+            // ),
+
             // const Padding(
             //   padding: EdgeInsets.all(20),
             //   // margin: EdgeInsets.symmetric(vertical: 40, horizontal: 40),
@@ -179,18 +255,21 @@
                   ),
                 ),
               ),
+
               ListTile(
                 leading: Icon(
                     Icons.home,
                     color: Colors.white,
                     size: 35,
                 ),
+
                 title: Center(
                   child: Text(
                       'List Tile 1'
                   ),
                 ),
               ),
+
               ListTile(
                 leading: Icon(
                     Icons.settings,

@@ -80,6 +80,16 @@ flutter:
   - family: Oswald
     fonts:
       - asset: Fonts/Oswald-VariableFont_wght.ttf
+  - family: Nabla
+    fonts:
+      - asset: Fonts/Nabla-Regular.ttf
+  - family: Phudu
+    fonts:
+      - asset: Fonts/Phudu-VariableFont_wght.ttf
+  - family: Nabla 2
+    fonts:
+      - asset: Fonts/Nabla-Regular-VariableFont_EDPT,EHLT.ttf
+
 
   #
   # For details regarding fonts from package dependencies,
