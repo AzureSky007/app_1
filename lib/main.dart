@@ -30,47 +30,104 @@
 
         body:
             // const
-            Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              crossAxisAlignment: CrossAxisAlignment.center,
-
+            Row(
               children: [
-                const
-                Text(
-                  'This is just plain text',
-                  style: TextStyle(
-                    fontFamily: 'Nabla',
-                    fontSize: 40
+                const Expanded(
+                  flex: 2,
+                  child: Image(
+                    image: AssetImage('assets/Car.jpg'),
+                    width: 125,
+                    height: 40,
                   ),
                 ),
 
-                const
-                Image(
-                  width: 150,
-                  height: 200,
-                  // alignment: Alignment.center,
-                  image: AssetImage('assets/Car.jpg'),
-                ),
-
-                ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.amber
-                  ),
-                    onPressed: () {},
+                Expanded(
+                  flex: 1,
+                  child: Container(
+                    padding: const EdgeInsets.all(30),
+                    color: Colors.amber,
                     child:
-                    const
-                    Text(
-                        'This is Elevated Button',
+                    const Text(
+                      '1',
                       style: TextStyle(
-                        color: Colors.black,
                         fontSize: 20,
-                        fontFamily: 'IndieFlower'
                       ),
-                    )
+                    ),
+                  ),
                 ),
-              ],
 
+                Expanded(
+                  flex: 4,
+                  child: Container(
+                    // padding: const EdgeInsets.all(50),
+                    color:  Colors.purple,
+                    child:
+                    const Text(
+                      '2',
+                      style: TextStyle(
+                        fontSize: 40,
+                      ),
+                    ),
+                  ),
+                ),
+
+                Expanded(
+                  flex: 3,
+                  child: Container(
+                    padding: const EdgeInsets.all(30),
+                    color: Colors.green,
+                    child:
+                    const Text(
+                      '3',
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                )
+              ],
             ),
+            // const
+            // Column(
+            //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            //   crossAxisAlignment: CrossAxisAlignment.center,
+            //
+            //   children: [
+            //     const Text(
+            //       'This is just plain text',
+            //       style: TextStyle(
+            //         fontFamily: 'Nabla 2',
+            //         fontSize: 40
+            //       ),
+            //     ),
+            //
+            //     ElevatedButton(
+            //       style: ElevatedButton.styleFrom(
+            //         backgroundColor: Colors.amber
+            //       ),
+            //         onPressed: () {},
+            //         child:
+            //         const
+            //         Text(
+            //             'This is Elevated Button',
+            //           style: TextStyle(
+            //             color: Colors.black,
+            //             fontSize: 20,
+            //             fontFamily: 'IndieFlower'
+            //           ),
+            //         )
+            //     ),
+            //
+            //     const
+            //     Image(
+            //       width: 300,
+            //       height: 400,
+            //       // alignment: Alignment.center,
+            //       image: AssetImage('assets/Car.jpg'),
+            //     ),
+            //   ],
+            //
+            // ),
 
             // const
             // Row(
